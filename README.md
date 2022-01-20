@@ -1,5 +1,6 @@
 # AlphaGo
 
+https://github.com/pmuens/alphago<br>
 This repository contains a reference implementation of the [AlphaGo](https://deepmind.com/research/alphago/) AI by [DeepMind](https://deepmind.com).
 
 ## How to play

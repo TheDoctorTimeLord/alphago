@@ -1,7 +1,7 @@
 import numpy as np
 
 from dlgo.encoders.base import Encoder
-from dlgo.encoder.utils import is_ladder_example, is_ladder_capture
+from dlgo.encoders.utils import is_ladder_escape, is_ladder_capture
 from dlgo.gotypes import Point, Player
 from dlgo.goboard_fast import Move
 from dlgo.agent.helpers import is_point_an_eye

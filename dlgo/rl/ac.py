@@ -1,5 +1,5 @@
 import numpy as np
-from keras.optimizers import SGD
+from tensorflow.compat.v2.keras.optimizers import SGD
 
 from dlgo.agent.base import Agent
 from dlgo.agent.helpers import is_point_an_eye
@@ -23,7 +23,7 @@ class ACAgent(Agent):
         X = np.array([board_tensor])
 
         actions, values = self._model.predict(X)
-        move_probs = actions[0]
+        move_probs = np.nan_to_num(actions[0], nan=0)
         estimated_value = values[0][0]
 
         eps = 1e-6

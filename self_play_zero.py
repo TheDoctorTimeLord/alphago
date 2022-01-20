@@ -57,7 +57,7 @@ def main():
 
     model = Model(inputs=[board_input], outputs=[policy_output, value_output])
     black_agent = zero.ZeroAgent(model, encoder, rounds_per_move=10, c=2.0)
-    white_agent = zerp.ZeroAgent(model, encoder, rounds_per_move=10, c=2.0)
+    white_agent = zero.ZeroAgent(model, encoder, rounds_per_move=10, c=2.0)
     c1 = zero.ZeroExperienceCollector()
     c2 = zero.ZeroExperienceCollector()
     black_agent.set_collector(c1)

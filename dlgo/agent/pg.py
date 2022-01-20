@@ -1,5 +1,5 @@
 import numpy as np
-from keras.optimizers import SGD
+from tensorflow.compat.v2.keras.optimizers import SGD
 
 from dlgo.agent.base import Agent
 from dlgo.agent.helpers import is_point_an_eye
